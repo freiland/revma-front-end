@@ -20,17 +20,18 @@ export default function SearchBar() {
   return (
 
 <div>
-            <div>
-              <SearchIcon /> 
-            </div>
-            <InputBase
-              placeholder="Search…"
-              // classes={{
-              //   root: classes.inputRoot,
-              //   input: classes.inputInput,
-              // }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </div> 
+    <div>
+      <SearchIcon /> 
+    </div>
+  <InputBase
+    placeholder="Search a city"
+        // classes={{
+        //   root: classes.inputRoot,
+        //   input: classes.inputInput,
+        // }}
+    inputProps={{ 'aria-label': 'search' }}
+    />
+  </div> 
+
   )
             }
