@@ -141,7 +141,7 @@ const geojsonObject2 = {
 		}
 	]
 };
-//const geojsonObject2 = {...}   // see full geojson object in Github
+
 const App = () => {
   const [center, setCenter] = useState([-94.9065, 38.9884]);
   const [zoom, setZoom] = useState(9);
