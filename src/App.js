@@ -151,6 +151,7 @@ const App = () => {
 return (
 	
   <div>
+		<Navbar></Navbar>
     <Map center={fromLonLat(center)} zoom={zoom}>
       <Layers>
         <TileLayer
