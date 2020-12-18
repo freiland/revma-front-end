@@ -91,30 +91,6 @@ const geojsonObject = {
 		}
 	]
 };
-const geojsonObject3 = {
-	"type": "FeatureCollection",
-	"features": [
-		{
-			"type": "Feature",
-			"properties": {
-				"kind": "county",
-				"name": "Johnson",
-				"state": "KS"
-			},
-			"geometry": {
-				"type": "Polygon",
-				"coordinates": [
-					
-						
-							
-								45.5051,
-								122.6750
-					
-				]
-			}
-		}
-	]
-};
 
 const geojsonObject2 = {
 	"type": "FeatureCollection",
@@ -169,6 +145,31 @@ const geojsonObject2 = {
 							]
 						]
 					]
+				]
+			}
+		}
+	]
+};
+
+const geojsonObject3 = {
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": {
+				"kind": "county",
+				"name": "Johnson",
+				"state": "KS"
+			},
+			"geometry": {
+				"type": "point",
+				"coordinates": [
+					
+						
+							
+								45.5051,
+								122.6750
+					
 				]
 			}
 		}

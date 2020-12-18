@@ -14,6 +14,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import TextField from '@material-ui/core/TextField';
 
 
 export default function SearchBar() {
@@ -23,15 +24,10 @@ export default function SearchBar() {
     <div>
       <SearchIcon /> 
     </div>
-  <InputBase
-    placeholder="Search a city"
-        // classes={{
-        //   root: classes.inputRoot,
-        //   input: classes.inputInput,
-        // }}
-    inputProps={{ 'aria-label': 'search' }}
-    />
+    <form noValidate autoComplete="off">
+  <TextField id="standard-basic" label="search for a city" margin='normal' />
+  </form>
   </div> 
 
   )
-            }
+          }
