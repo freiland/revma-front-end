@@ -10,6 +10,7 @@ import { fromLonLat, get } from 'ol/proj';
 import GeoJSON from 'ol/format/GeoJSON';
 import Controls  from "./Controls/Controls";
 import FullScreenControl  from "./Controls/Controls"
+import Navbar from './Navbar/Navbar';
 let styles = {
   'MultiPolygon': new Style({
     stroke: new Stroke({
@@ -148,6 +149,7 @@ const App = () => {
   const [showLayer1, setShowLayer1] = useState(true);
   const [showLayer2, setShowLayer2] = useState(true);
 return (
+	
   <div>
     <Map center={fromLonLat(center)} zoom={zoom}>
       <Layers>
