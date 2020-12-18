@@ -16,7 +16,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
 
-export default function Search() {
+export default function SearchBar() {
   return (
 
 <div>

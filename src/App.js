@@ -11,7 +11,7 @@ import GeoJSON from 'ol/format/GeoJSON';
 import Controls  from "./Controls/Controls";
 import FullScreenControl  from "./Controls/Controls"
 import Navbar from './Navbar/Navbar';
-import Search from './Search/Search';
+import SearchBar from './SearchBar/SearchBar';
 let styles = {
   'MultiPolygon': new Style({
     stroke: new Stroke({
@@ -153,6 +153,7 @@ return (
 	
   <div>
 		<Navbar></Navbar>
+		<SearchBar></SearchBar>
     <Map center={fromLonLat(center)} zoom={zoom}>
       <Layers>
         <TileLayer
@@ -190,6 +191,8 @@ return (
         onChange={event => setShowLayer2(event.target.checked)}
       /> Wyandotte County</div>
     </div>
+		
+		
 		
 		
 		
