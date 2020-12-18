@@ -100,31 +100,20 @@ const geojsonObject3 = {
 				"state": "KS"
 			},
 			"geometry": {
-				"type": "MultiPolygon",
+				"type": "Polygon",
 				"coordinates": [
-					[
-						[
-							[
-								-94.9065,
-								38.9884
-							],
-							[
-								-95.0544,
-								38.9829
-							],
-							[
-								-95.0544,
-								38.7365
-							],
-							[
-								-94.9668
-						]
-					]
+					
+						
+							
+								45.5051,
+								122.6750
+					
 				]
 			}
 		}
 	]
 };
+
 const geojsonObject2 = {
 	"type": "FeatureCollection",
 	"features": [
