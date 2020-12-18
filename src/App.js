@@ -11,6 +11,7 @@ import GeoJSON from 'ol/format/GeoJSON';
 import Controls  from "./Controls/Controls";
 import FullScreenControl  from "./Controls/Controls"
 import Navbar from './Navbar/Navbar';
+import Search from './Search/Search';
 let styles = {
   'MultiPolygon': new Style({
     stroke: new Stroke({
@@ -189,6 +190,9 @@ return (
         onChange={event => setShowLayer2(event.target.checked)}
       /> Wyandotte County</div>
     </div>
+		
+		
+		
   );
 }
 export default App;
