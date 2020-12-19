@@ -11,7 +11,7 @@ class LatLong extends React.Component {
   }
 
   makeApiCall = () => {
-    fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env.REACT_APP_API_KEY}`)
+    fetch(`https://devru-latitude-longitude-find-v1.p.rapidapi.com/latlon.php?location=New%20York"y=${process.env.REACT_APP_API_KEY}`)
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
