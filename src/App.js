@@ -177,8 +177,8 @@ const geojsonObject3 = {
 };
 
 const App = () => {
-  const [center, setCenter] = useState([-122.6750, 45.5051 ]);
-  const [zoom, setZoom] = useState(10);
+  const [center, setCenter] = useState([-94.9065, 38.9884 ]);
+  const [zoom, setZoom] = useState(9.5);
   const [showLayer1, setShowLayer1] = useState(true);
 	const [showLayer2, setShowLayer2] = useState(true);
 	
