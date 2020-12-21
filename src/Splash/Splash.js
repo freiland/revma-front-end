@@ -1,6 +1,10 @@
 import React from 'react';
+import image from '../img/splash_image';
 
-function Splash () {
-  return 
-  
+export default function Splash () {
+  return (
+    <img id='skyline' src={image} />
+
+  )
+
 }
