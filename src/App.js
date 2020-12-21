@@ -187,10 +187,10 @@ const App = () => {
 return (
 	
   <div>
-		
+		<Splash></Splash>
 		<Navbar></Navbar>
 		<SearchBar></SearchBar>
-		<Splash></Splash>
+		
     <Map center={fromLonLat(center)} zoom={zoom}>
       <Layers>
         <TileLayer
