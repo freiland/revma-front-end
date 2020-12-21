@@ -13,6 +13,7 @@ import FullScreenControl  from "./Controls/Controls"
 import Navbar from './Navbar/Navbar';
 import SearchBar from './SearchBar/SearchBar';
 import Splash from './Splash/Splash'
+
 let styles = {
   'MultiPolygon': new Style({
     stroke: new Stroke({
@@ -186,9 +187,8 @@ const App = () => {
 return (
 	
   <div>
-		<SearchBar></SearchBar>
 		<Navbar></Navbar>
-		
+		<Splash></Splash>
     <Map center={fromLonLat(center)} zoom={zoom}>
       <Layers>
         <TileLayer
