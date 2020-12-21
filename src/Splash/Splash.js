@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../img/splash_four.jpg';
+import image from '../img/splash_five.jpg';
 
 export default function Splash () {
   return (
