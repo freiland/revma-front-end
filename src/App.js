@@ -187,7 +187,9 @@ const App = () => {
 return (
 	
   <div>
+		
 		<Navbar></Navbar>
+		<SearchBar></SearchBar>
 		<Splash></Splash>
     <Map center={fromLonLat(center)} zoom={zoom}>
       <Layers>
