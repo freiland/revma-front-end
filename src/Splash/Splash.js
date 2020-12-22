@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../img/splash_eight.jpg';
+import image from '../img/splash_six.jpg';
 
 export default function Splash () {
   return (
@@ -7,7 +7,7 @@ export default function Splash () {
       <img id='skyline' src={image} />
       
       <div className='text-wrapper'>
-      <h1>find your room today.</h1>
+      <h1>find your room.</h1>
       <div className="topnav">
   <a className="active" href="#home">Home</a>
   <a href="#about">About</a>
