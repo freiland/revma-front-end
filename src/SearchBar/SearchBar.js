@@ -21,7 +21,9 @@ const SearchBar = ({keyword,setKeyword}) => {
   
   return (
     
-    
+    const search () => {
+      return keyword;
+    }
   );
 }
 
