@@ -191,7 +191,7 @@ return (
 		<Navbar></Navbar>
 		<div className = "frontPage">
 			<div className="SearchBar">
-		<SearchBar></SearchBar>
+		
 		</div>
 		<Splash></Splash>
 		</div>
