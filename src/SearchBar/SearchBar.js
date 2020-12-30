@@ -1,26 +1,22 @@
-// import React from 'react';
-// import { fade, makeStyles } from '@material-ui/core/styles';
-// import AppBar from '@material-ui/core/AppBar';
-// import Toolbar from '@material-ui/core/Toolbar';
-// import IconButton from '@material-ui/core/IconButton';
-// import Typography from '@material-ui/core/Typography';
-// import InputBase from '@material-ui/core/InputBase';
-// import Badge from '@material-ui/core/Badge';
-// import MenuItem from '@material-ui/core/MenuItem';
-// import Menu from '@material-ui/core/Menu';
-// import MenuIcon from '@material-ui/icons/Menu';
-// import SearchIcon from '@material-ui/icons/Search';
-// import AccountCircle from '@material-ui/icons/AccountCircle';
-// import NotificationsIcon from '@material-ui/icons/Notifications';
-// import MoreIcon from '@material-ui/icons/MoreVert';
-// import TextField from '@material-ui/core/TextField';
+import SearchBar from 'material-ui-search-bar';
+import React from 'react';
 
-
-// const SearchBar = ({keyword,setKeyword}) => {
-//   const BarStyling = {width:"70rem",background:"#F2F1F9", border:"none", padding:".4rem"};
+function Search() {
   
-//   return (
-  
-//     )
+  doSomethingWith() {
+    console.log(hi); 
+   } 
+    
 
-// export default SearchBar
+    
+  
+return (
+  <SearchBar
+    value={this.state.value}
+    onChange={(newValue) => this.setState({ value: newValue })}
+    onRequestSearch={() => doSomethingWith(this.state.value)}
+  />
+);
+};
+
+export default Search;

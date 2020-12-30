@@ -11,7 +11,7 @@ import GeoJSON from 'ol/format/GeoJSON';
 import Controls  from "./Controls/Controls";
 import FullScreenControl  from "./Controls/Controls"
 import Navbar from './Navbar/Navbar';
-import SearchBar from './SearchBar/SearchBar';
+import Search from './SearchBar/SearchBar';
 import Splash from './Splash/Splash'
 
 let styles = {
@@ -187,7 +187,7 @@ const App = () => {
 return (
 	
   <div>
-		
+		<Search></Search>
 		<Navbar></Navbar>
 		<div className = "frontPage">
 			<div className="SearchBar">
