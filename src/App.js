@@ -187,13 +187,16 @@ const App = () => {
 return (
 	
   <div>
-		<Search></Search>
-		<Navbar></Navbar>
-		<div className = "frontPage">
-			<div className="SearchBar">
 		
+		<Navbar></Navbar>
+		
+		<div className = "frontPage">
+		
+			<div className="SearchBar">
+			
 		</div>
 		<Splash></Splash>
+		<Search></Search>
 		</div>
     <Map center={fromLonLat(center)} zoom={zoom}>
       <Layers>
