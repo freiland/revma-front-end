@@ -6,7 +6,7 @@ class Cities extends React.Component {
     this.state = {
       error: null,
       isLoaded: false,
-      headlines: []
+      location: {latitude:'', longitude:''}
     };
   }
 
@@ -28,8 +28,31 @@ class Cities extends React.Component {
         });
   }
 
+  componentDidMount() {
+    this.makeApiCall()
+  }
+
   render() {
-    'test'
+    const { error, isLoaded, location } = this.state;
+    if (error) {
+      return <React.Fragment>Error: {error.message}</React.Fragment>;
+    } else if (!isLoaded) {
+      return <React.Fragment>Loading...</React.Fragment>;
+    } else {
+      return (
+        <React.Fragment>
+          <h1>location</h1>
+          <ul>
+            {locations.map((latitude, longitude, index) =>
+              <li key={index}>
+                <h3>{}</h3>
+                <p>{headline.abstract}</p>
+              </li>
+            )}
+          </ul>
+        </React.Fragment>
+      );
+    }
   }
 }
 
