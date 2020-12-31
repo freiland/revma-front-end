@@ -11,13 +11,19 @@ class Cities extends React.Component {
   }
 
   makeApiCall = () => {
-    fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env.REACT_APP_API_KEY}`)
+    fetch("https://devru-latitude-longitude-find-v1.p.rapidapi.com/latlon.php?location=New%20York", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "7043bd60e6msh017de187a06b311p16fbfejsn6f5cf5064028",
+		"x-rapidapi-host": "devru-latitude-longitude-find-v1.p.rapidapi.com"
+	}
+})
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
           this.setState({
             isLoaded: true,
-            headlines: jsonifiedResponse.results
+            cities: jsonifiedResponse.results
           });
         })
         .catch((error) => {
@@ -41,12 +47,12 @@ class Cities extends React.Component {
     } else {
       return (
         <React.Fragment>
-          <h1>location</h1>
+          <h1>cities</h1>
           <ul>
             {locations.map((latitude, longitude, index) =>
               <li key={index}>
-                <h3>{}</h3>
-                <p>{headline.abstract}</p>
+                <h3>{cities[0].name}</h3>
+                <p>{cities[0].lat}</p>
               </li>
             )}
           </ul>
