@@ -6,12 +6,22 @@ import SearchIcon from '@material-ui/icons/Search';
 
 function Search() {
 
-[searchTerm, setSearchTerm] = useState('')
+const [searchTerm, setSearchTerm] = useState('')
+
+console.log(searchTerm)
+
+const cityInput = setSearchTerm 
+
+useEffect(() => {
+  
+}
+
+)
   
 return (
   <>
   <div className="search"></div>
-  <input type='text' defaultValue=''/>
+  <input type='text' value={searchTerm} onChange={e => setSearchTerm(e.target.value)}/>
   <button onClick = {setSearchTerm}>Search</button>
   </>
   
