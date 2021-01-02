@@ -18,7 +18,7 @@ useEffect(() => {
 	"headers": {
 		"x-rapidapi-key": "7043bd60e6msh017de187a06b311p16fbfejsn6f5cf5064028",
 		"x-rapidapi-host": "devru-latitude-longitude-find-v1.p.rapidapi.com"
-	}
+	}, 
 })
 .then(response => {
 	console.log(response);
@@ -27,15 +27,13 @@ useEffect(() => {
 	console.error(err);
 });
   
-}
-
-)
+})
   
 return (
   <>
   <div className="search"></div>
-  <input type='text' value={searchTerm} onChange={e => setSearchTerm(e.target.value)}/>
-  <button onClick = {setSearchTerm}>Search</button>
+  <input type='text' value={searchTerm} onChange= {e => setSearchTerm(e.target.value)}/>
+  <button onClick ={e => setSearchTerm(e.target.value)}>Search</button>
   </>
   
     
