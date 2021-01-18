@@ -17,6 +17,11 @@ code {
   position: relative;
 }
 
+.search {
+  width: 100 px;
+  color:black;
+}
+
 #skyline {
   padding:50px;
   position: absolute;
